@@ -5,5 +5,10 @@ describe('Pruebas con string', () => {
         const output = message('Valp');
         expect(typeof output).toBe('string');
     });
+    it('Debe retornar el parametro recibido', () => {
+        const name = 'Valp';
+        const output = message(name);      
+        expect(output).toContain(name);
+    })
 });
 
